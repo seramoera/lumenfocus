@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen Focus - Home</title>
+    <link rel="stylesheet" href="servicesstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-info">
+            <div class="top-text">
+                <p>
+                    <span class="info-1"></span>LUMEN FOCUS IS A FULL SERVICE PRODUCTION COMPANY
+                    <span class="info-2">MAGAZINE ARRIVES WITHIN 30 DAYS</span>
+                </p>
+            </div>  
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <img src="icons/logo.png" alt="Lumen Focus Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="galleryhome.html">WORKS</a></li>
+                    <li><a href="magazines.html">COLLECTIONS</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">SUPPORT</button>
+                        <div class="dropdown-content">
+                          <a href="order_details.html">ORDER & PAYMENT</a>
+                          <a href="terms.html">TERMS & SERVICES</a>
+                          <a href="services.html">SERVICES & OFFERS</a>
+                        </div>
+                      </div>
+                </ul>
+            </nav>
+            <div class="icon-container">
+                <div class="search">
+                    <img src="icons/SEARCH.png" alt="Search Icon">
+                </div>
+                <div class="cart">
+                    <a href="cart.html">
+                        <img src="icons/CART.png" alt="Cart Icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Header -->
+        <header id="mobile-header" class="mobile-header hidden">
+            <nav id="mobile-nav" class="mobile-nav hidden">
+                <!-- Hamburger Icon for toggling menu -->
+                <div class="hamburger" id="hamburger-menu">
+                    <div class="icon-container2">
+                        <img class="burger-icon" src="icons/burger.png" alt="Hamburger Icon">
+                        <img class="search-icon" src="icons/SEARCH.png" alt="Search Icon">
+                        <img class="cart-icon" src="icons/CART.png" alt="Cart Icon">
+                    </div>
+                </div>
+                <img class="lumen-logo" src="icons/logo.png" alt="Lumen Focus Logo">
+
+                <!-- Menu items -->
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="galleryhome.html">WORKS</a></li>
+                    <li><a href="magazines.html">COLLECTIONS</a></li>
+                    <li><a href="order_details.html">ORDER & PAYMENT</a></li>
+                    <li><a href="terms.html">TERMS & SERVICES</a></li>
+                    <li><a href="services.html">SERVICES & OFFERS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Script for toggling the hamburger menu -->
+        <script src="hamburger.js"></script>
+
+    </header>
+
+
+    <div class="shipment-details-section">
+    <h1><span class="text">SERVICES & OFFERS</span></h1>
+        <h2>
+            <span class="small-nav">
+                <a href="home.html">HOME</a> / 
+                <a href="order_details.html">SUPPORT</a> / 
+                <a href="services.html">SERVICES & OFFERS</a>
+            </span>
+        </h2>      
+    </div>
+    <div class="checkout-container">
+
+    <!-- Calendar Section -->
+    <div class="calendar-container">
+        <h1>BOOK A DATE</h1>
+        <div class="year-select">
+          <button class="year-btn" id="prevYear">←</button>
+          <span id="yearDisplay">2024</span>
+          <button class="year-btn" id="nextYear">→</button>
+        </div>
+        <div id="calendar" class="calendar"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!--SERVICES-->
+    <section class="services-section">
+        <h1>Our Services</h1>
+        <div class="services-grid">
+            <div class="service-card">
+                <h2>Portrait Session</h2>
+                <div class="price">₱5,000.00</div>
+                <p>Capture stunning individual or family portraits with professional lighting and retouching.</p>
+                <button class="book-btn">Book Now</button>
+            </div>
+            <div class="service-card">
+                <h2>Event
+                    Photography</h2>
+                <div class="price">₱15,000.00</div>
+                <p>Comprehensive coverage for weddings, birthdays, or corporate events, ensuring no moment is missed.</p>
+                <button class="book-btn">Book Now</button>
+            </div>
+            <div class="service-card">
+                <h2>Editorial/Product Photography</h2>
+                <div class="price">₱25,000.00</div>
+                <p>High-quality shoots tailored for businesses or brands, perfect for magazines, websites, or advertising campaigns.</p>
+                <button class="book-btn">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!--FORM SECTION-->
+
+    <div class="form-container">
+    
+    <form class="submission-form">
+        <h1>FORM DETAILS</h1>
+        <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+        </div>
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+    
+
+
+ <!-- Footer -->
+    <footer class="footer">
+        <h1>SUPPORT</h1>
+        <div class="footer-links">
+            <a href="order_details.html">Orders & Payment</a><br>
+            <a href="services.html">Contact Us</a><br>
+            <a href="terms.html">Terms & Services</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="icons/FACEBOOK.png" alt="Facebook Logo">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="icons/IG.png" alt="Instagram Logo">
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank">
+                <img src="icons/PINTEREST.png" alt="Pinterest Logo">
+            </a>
+            <a href="https://www.tiktok.com/explore" target="_blank">
+                <img src="icons/TIKTOK.png" alt="Tiktok Logo">
+            </a>
+        </div>
+
+
+        <p>&copy;2024 Lumen Focus. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

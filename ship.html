@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen Focus - Home</title>
+    <link rel="stylesheet" href="styleforship.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-info">
+            <div class="top-text">
+                <p>
+                    <span class="info-1"></span>LUMEN FOCUS IS A FULL SERVICE PRODUCTION COMPANY
+                    <span class="info-2">MAGAZINE ARRIVES WITHIN 30 DAYS</span>
+                </p>
+            </div>  
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <img src="icons/logo.png" alt="Lumen Focus Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="galleryhome.html">WORKS</a></li>
+                    <li><a href="magazines.html">COLLECTIONS</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">SUPPORT</button>
+                        <div class="dropdown-content">
+                          <a href="order_details.html">ORDER & PAYMENT</a>
+                          <a href="terms.html">TERMS & SERVICES</a>
+                          <a href="services.html">SERVICES & OFFERS</a>
+                        </div>
+                      </div>
+                </ul>
+            </nav>
+            <div class="icon-container">
+                <div class="search">
+                    <img src="icons/SEARCH.png" alt="Search Icon">
+                </div>
+                <div class="cart">
+                    <a href="cart.html">
+                        <img src="icons/CART.png" alt="Cart Icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Header -->
+        <header id="mobile-header" class="mobile-header hidden">
+            <nav id="mobile-nav" class="mobile-nav hidden">
+                <!-- Hamburger Icon for toggling menu -->
+                <div class="hamburger" id="hamburger-menu">
+                    <div class="icon-container2">
+                        <img class="burger-icon" src="icons/burger.png" alt="Hamburger Icon">
+                        <img class="search-icon" src="icons/SEARCH.png" alt="Search Icon">
+                        <img class="cart-icon" src="icons/CART.png" alt="Cart Icon">
+                    </div>
+                </div>
+                <img class="lumen-logo" src="icons/logo.png" alt="Lumen Focus Logo">
+
+                <!-- Menu items -->
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="galleryhome.html">WORKS</a></li>
+                    <li><a href="magazines.html">COLLECTIONS</a></li>
+                    <li><a href="order_details.html">ORDER & PAYMENT</a></li>
+                    <li><a href="terms.html">TERMS & SERVICES</a></li>
+                    <li><a href="services.html">SERVICES & OFFERS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Script for toggling the hamburger menu -->
+        <script src="hamburger.js"></script>
+
+    </header>
+
+
+    <div class="shipment-details-section">
+    <h1><span class="text">ORDERS & PAYMENT</span></h1>
+        <h2>
+            <span class="small-nav">
+                <a href="home.html">HOME</a> / 
+                <a href="order_details.html">SUPPORT</a> / 
+                <a href="ship.html">ORDERS & PAYMENT</a>
+            </span>
+        </h2>      
+    </div>
+    <div class="checkout-container">
+       
+        <!-- Order Summary and Payment -->
+        <div class="left-section">
+            <h2>Secure Checkout</h2>
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <p>Subtotal: <span>₱1,300.00</span></p>
+                <p>Shipping: <span>₱150.00</span></p>
+                <p>Total: <span>₱1,450.00</span></p>
+            </div>
+    
+            <!-- Payment Method -->
+            <div class="payment-method">
+                <h3>Payment Method</h3>
+                <label>
+                    <input type="radio" name="payment" checked>
+                    Credit Card
+                </label>
+                <div class="credit-card-info">
+                    <label for="card-number">Credit Card Number</label>
+                    <input type="text" id="card-number" placeholder="Enter credit card number">
+    
+                    <label for="expiration-date">Expiration Date</label>
+                    <div class="expiration">
+                        <input type="text" id="exp-month" placeholder="Month">
+                        <input type="text" id="exp-year" placeholder="Year">
+                    </div>
+    
+                    <label for="security-code">Security Code</label>
+                    <input type="text" id="security-code" placeholder="CVV">
+                </div>
+    
+                <label>
+                    <input class ="cash-input" type="radio" name="payment">
+                    Cash on Delivery
+                </label>
+    
+                <button class="proceed-btn">Proceed</button>
+            </div>
+        </div>
+    
+        <!-- Shipping Information -->
+        <div class="right-section">
+            <h2>Shipping Information</h2>
+            <form class="shipping-form">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="Enter your full name">
+    
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Enter your address">
+    
+                <label for="delivery-note">Delivery Note</label>
+                <textarea id="delivery-note" placeholder="Enter delivery note"></textarea>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+    
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Enter message"></textarea>
+    
+                <button type="submit" class="save-shipping-btn">Save shipping information</button>
+            </form>
+        </div>
+    </div>
+   
+    <!-- Footer -->
+    <footer class="footer">
+        <h1>SUPPORT</h1>
+        <div class="footer-links">
+            <a href="order_details.html">Orders & Payment</a><br>
+            <a href="services.html">Contact Us</a><br>
+            <a href="terms.html">Terms & Services</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="icons/FACEBOOK.png" alt="Facebook Logo">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="icons/IG.png" alt="Instagram Logo">
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank">
+                <img src="icons/PINTEREST.png" alt="Pinterest Logo">
+            </a>
+            <a href="https://www.tiktok.com/explore" target="_blank">
+                <img src="icons/TIKTOK.png" alt="Tiktok Logo">
+            </a>
+        </div>
+
+
+        <p>&copy;2024 Lumen Focus. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
